@@ -1,0 +1,65 @@
+-A python string is a list of characters enclosed inside single double or triple quotes 
+  'string'
+  "string"
+  '''multiline string'''
+-Accesing a character in string
+  string = "Hello World"
+  print(string[0]) -->it will print:H
+-Finding length of string
+  print(len(string)) -->it will print:11
+-Find a character in string:finds the first occurance of character
+  --find():it retuns -1 when character not found in string
+    print(string.find('l')) -->it will print:2
+  --index():raise a exception when charcter not found in string
+    print(string.index('l'))-->it will print:2
+-Find frequency of a character
+  --count
+    print(string.count('l'))-->it will print:3
+-String Slicing
+  --string_name[start_index : end_index : step]
+    print(string[0:5])-->it will print:Hello
+-Split a string
+  --split()
+    print(string(" "))-->it will print:["Hello", "World"]
+-Check wheather a string starts or ends with a character
+  --.startswith()
+    string.startswith('H')-->it will print:True
+  --.endswith()
+    string.endswith('H')-->it will print:False
+-Repeat a string multiple times
+  print(string*2)-->it will print:Hello WorldHello World
+-Replace a substring
+  --.replace(old,new)
+    new_string = string.replace("World","Reader")
+    print(new_string)-->it will print:Hello Reader
+-Changing the case
+  --UPPERCASE
+    print(string.upper())-->HELLO WORLD
+  --lowercase
+    print(string.lower())-->hello world
+  --TitleCase
+    print(string.title())-->Hello World
+  --Capitalize
+    print(string.capitalize())-->Hello world
+  --swapcase
+    print(string.swapcase())-->hELLO wORLD
+-Reverse a string
+  --we use join and reversed()
+    print("".join(reversed(string)))-->dlroW olleH
+-strip a string
+  --.strip():it will strip off space at start and end
+  --.lstrip():it will strip off space at starting 
+  --.rstrip():it will strip off space at end  
+-concatinate strings
+  --we use + operator to do this
+-Check properties of string
+  word = "Hello World"
+  word.isalnum() #check if all char are alphanumeric 
+  word.isalpha() #check if all char in the string are alphabetic
+  word.isdigit() #test if string contains digits
+  word.istitle() #test if string contains title words
+  word.isupper() #test if string contains upper case
+  word.islower() #test if string contains lower case
+  word.isspace() #test if string contains spaces
+  word.endswith('d') #test if string endswith a d
+  word.startswith('H') #test if string startswith H
