@@ -1,0 +1,63 @@
+-A variable is created the moment we assign a value to it
+  x=5
+-Casting: when we want to specify the data type
+  str(x)
+-We can use doulble or single quote to specify string  
+  x="Ayush" or 'Ayush'
+-Case Sensitive: x is other variable X is other
+  x="something"
+  X="something  
+-VariableName: 
+  --start with a letter or underscore 
+    myvar = 1
+    _myvar = 2
+  --can not start with a number
+    1wrong = 1 ><
+  --can only contain alphanumeric character or underscore
+    a2_var = 1
+  --can not be a python keyword
+    int = 12 ><
+-Multi word variables
+  --camelCase
+    thisIsAVariable = 1
+  --PascalCase
+    ThisIsAVariable = 2
+  --snake_case
+    this_is_a_variable = 3
+-Assign multiple values  
+  --many values to multiple variables
+    x, y, z = "one", "two", "three"
+  --one value to multiple variable
+    x = y = z = "one value"
+  --unpacking a Collection
+    fruits = ["orange", "grape", "kiwi"]
+    x, y, z = fruits
+    fruits = ("orange", "grape", "kiwi")
+    (x, y, z) = fruits
+-Output variables
+  --we use print
+    print(x)
+  --multiple variables
+    print(x,y,z)
+  --or we can use + string will concatinate numbers will add
+    print(x+y+z)
+-Global variables: use global keyword if you want to change a global variable inside a function.
+  --create a variable outside and using it inside the function
+    x = "awesome"
+    def myfunc():
+    print("Python is " + x)
+    myfunc()
+  --if we create a variable inside the function it will be local and can be only used inside this function scope
+    x = "awesome"
+    def myfunc():
+      x = "fantastic"
+      print("Python is " + x) -->it will print: Python is fantastic
+    myfunc()
+    print("Python is " + x) -->it will print:Python is awesome
+  --global keyword: the variable belongs to the global scope
+    def myfunc():
+      global x
+      x = "fantastic"
+    myfunc()
+    print("Python is " + x) -->now it will print:Python is fantastic
+ -   
