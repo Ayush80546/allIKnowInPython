@@ -1,0 +1,43 @@
+Operators are special symbols that perform operations on variables and values
+1.Arithmetic Operators 2.Assignment Operators 3.Comparison Operators 4.Logical Operators 5.Bitwise Operators 6.Special Operators
+-Arithmetic operators
+  -addition:+ 
+  -subtraction:-
+  -multiplication:*
+  -division:/
+  -floor division://
+  -modulo:%
+  -power:**
+-Assignment operator
+  -assignment:=
+  -addition assignment:+=
+  -subtraction assignment:-=
+  -multiplication assignment:*=
+  -division assignment:/=
+  -remainder assignment:%=
+  -exponent assignment:**=
+-Comparison operator
+  -is equal to:==
+  -not equal to:!=
+  -greater than:>
+  -less than:<
+  -greater than or equal to:>=
+  -less than or equal to:<=
+-Logical operator
+  -and
+  -or
+  -not
+-Bitwise operator:Bitwise operators act on operands as if they were strings of binary digits. They operate bit by bit
+  -bitwise and:&
+  -bitwise or:|
+  -bitwise not:~
+  -bitwise xor:^
+  -bitwise right shift:>>
+  -bitwise left shift:<<
+-Python special operators
+  --identity operators:check if two values are located at the same memory location.
+    is
+    is not
+  --membership operator:They are used to test whether a value or variable is found in a sequence (string, list, tuple, set and dictionary)
+    in
+    not in
