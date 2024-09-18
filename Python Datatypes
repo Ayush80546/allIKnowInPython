@@ -1,0 +1,25 @@
+Since everything is an object in Python programming, Python data types are classes and variables are instances (objects) of these classes.
+-type():To define the values ​​of various data types of Python and check their data types
+-Numerical data types
+  -int():negative and positive whole numbers
+    i = 2
+  -float():Real numbers we can append e or E to specify scientific notation
+    f = 2.1
+  -complex():(real part) + (imaginary part)j
+    c = 2 +4j
+-Sequence data types
+  -str():arrays of bytes representing Unicode characters.
+    s = "String"
+  -list():Lists are just like arrays is an ordered collection of data. It is very flexible as the items in a list do not need to be of the same type
+    l = [1,"string",2.1,2+4j]
+  -tuple():The only difference between a tuple and a list is that tuples are immutable i.e. tuples cannot be modified after it is created
+    t = (1,"string",2.1,2+4j)
+-Boolean data type
+  bool(): True or False
+-Set data type
+  -set():a Set is an unordered collection of data types that is iterable, mutable, and has no duplicate elements
+    s = {1,2,3,4,5,6}
+-Dictionery data type
+  -dict():key can not be repeated
+    d = {"key1":value1,"key2":value2}
+-Binary Types( memoryview , bytearray , bytes )
