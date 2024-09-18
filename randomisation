@@ -1,0 +1,7 @@
+from random import *
+-randint(start, end):returns a random number between start and end inclusive
+-random():returns a random float number between 0 and 1
+-choice(collection_object):select a random element from a collection object like a list, set, tuple, etc.
+-choices(collection_object,k=value):returns a list of selected values from the input container object.
+-shuffle(collection_object):the elements of the list are shuffled in a random order 
+-randrange(start, stop, step):it generates a randomly selected element from the range(start, stop, step)
