@@ -1,3 +1,4 @@
+https://peps.python.org/pep-0008/#naming-conventions
 -A variable is created the moment we assign a value to it
   x=5
 -Casting: when we want to specify the data type
@@ -18,11 +19,15 @@
   --can not be a python keyword
     int = 12 ><
 -Multi word variables
+  --CAPITALS(constants are written in CAPITALS.)
+    THISISAVARIABLE = 0
+  --TitleCase(Class names are TilteCase without underscores.)
+    ThisIsAVariable = 0
   --camelCase
     thisIsAVariable = 1
   --PascalCase
     ThisIsAVariable = 2
-  --snake_case
+  --snake_case(Variable and function names use lowercase words_separated_by_underscore.)
     this_is_a_variable = 3
 -Assign multiple values  
   --many values to multiple variables
