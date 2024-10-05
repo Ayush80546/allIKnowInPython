@@ -1,0 +1,13 @@
+application programming interfaces is a set of commands functions and protocols used to create programs and interact with external systems.
+-api endpoint -> location where data is stored
+-how to send an api request
+  --import requests
+    response = requests.get(url="endpoint url")
+    reaponse.raise_for_status()
+-response status code - https://www.webfx.com/web-development/glossary/http-status-codes/
+-parameters -> these are the parameters server look in api request and respond accordingly.
+  --parameters ={
+        "param1": something,
+        "param2": something,
+    }
+    response = requests.get(url="endpoint url", param=parameters)
