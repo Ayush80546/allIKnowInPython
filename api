@@ -11,3 +11,10 @@ application programming interfaces is a set of commands functions and protocols 
         "param2": something,
     }
     response = requests.get(url="endpoint url", param=parameters)
+-unescaping html entities
+  --import html
+  --html.unescape("html text")
+-Type Hints and Arrows->
+  --def function(var: int) ->str:
+      return str
+-api key
