@@ -1,0 +1,53 @@
+You can create a telegram bot using BotFather in the telegram app.
+
+Just Search for BotFather in telegram and send /newbot
+
+Save the username and the Key.
+
+To get the chat id, start a conversation with your bot, by searching for the username of your bot and send it the /my_id command, then go to:
+
+https://api.telegram.org/bot{Your_key}/getUpdates
+
+Look for chat['id'] in the json.
+
+To send a message you can use:
+
+https://api.telegram.org/bot{Your_key}/sendMessage?chat_id={your_chat_id}&text="{your messahe}"
+
+
+You can find lots of tutorials on how to do it.
+
+
+
+import requests
+ 
+ 
+bot = "botname"
+http_access_token = "bot_token"
+chat_id = "chat_id"
+bot_url = "bot API url"
+ 
+bot_params = {
+    'chat_id': chat_id,
+    'text': 'Bring An Umbrella'
+}
+ 
+parameters = {
+    'lat': "latitude",
+    'lon': "longitude",
+    'appid': 'api key',
+    'exclude': "current,minutely,daily"
+}
+url = f"https://api.openweathermap.org/data/2.5/onecall"
+ 
+api_data = requests.get(url, params=parameters)
+api_data.raise_for_status()
+ 
+weather_hourly = api_data.json()['hourly']
+weather_ids = [weather_hourly[i]['weather'][0]['id'] for i in range(0, 12)]
+ 
+ 
+for i in weather_ids:
+    if i < 700:
+        requests.get(bot_url, params=bot_params)
+        break
