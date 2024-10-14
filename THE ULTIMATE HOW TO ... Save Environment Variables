@@ -14,3 +14,11 @@
     API_KEY = os.getenv("MyAPIKey_MyOtherProject")
 -environment variables are always strings so use type conversion for desired value.
 -If you're worried about the security of the text file on your PC, then you could encrypt the file using something like AXCrypt.
+4-We can hide our API key, Auth_Token, personal phone numbers, etc. using config.py before uploading our code to Github.
+  This way, you can hide sensitive information without using any libraries.
+  When we push to GitHub, only main.py and .gitignore will be uploaded to the public repo. The config.py, and all sensitive information contained in it, will not end up on GitHub.
+  --You should add config.py into .gitignore (Create .gitignore file if it does not exist.)
+
+    save key in config.py
+    import config
+    api_key = config.OWM_api_key
